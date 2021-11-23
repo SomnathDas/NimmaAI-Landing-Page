@@ -1,0 +1,36 @@
+.topnavbar_container {
+  width: 100%;
+  height: 2.4rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding: 10px 4rem;
+}
+
+.navbar_list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_list__container {
+  display: flex;
+  gap: 2rem;
+}
+
+.logo_text {
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+@media screen and (max-width: 460px) {
+  .logo_text {
+    display: none;
+  }
+
+  .navbar_list {
+    justify-content: center;
+  }
+}

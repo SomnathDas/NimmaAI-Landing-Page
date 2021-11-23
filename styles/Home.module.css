@@ -1,0 +1,93 @@
+.hero_section_container,
+.feat__one_section_container,
+.feat__two_section_container,
+.footer_section_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  scroll-snap-align: start;
+}
+
+.hero_section,
+.feat__one_section,
+.feat__two_section,
+.footer_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 4rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.arrow {
+  height: 80px;
+  width: 80px;
+}
+
+.head {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head > h1 {
+  font-weight: 300;
+  font-family: "Poppins";
+}
+
+.paragraph {
+  line-height: 1.6rem;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.heading {
+  letter-spacing: 0.6rem;
+}
+
+.download_btn {
+  border: none;
+  background-color: #7de2d1;
+  padding: 0.8rem 0;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.download_btn:focus-within {
+  background-color: black;
+  color: white;
+}
+
+@media screen and (min-width: 460px) {
+  .download_btn:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .hero_art {
+    /*display: none;*/
+  }
+  .hero_section,
+  .feat__one_section,
+  .feat__two_section,
+  .footer_section {
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .hero_section .content {
+    text-align: center;
+  }
+}
